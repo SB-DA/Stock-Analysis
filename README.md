@@ -1,14 +1,67 @@
 # Stock-Analysis
 Exploring Green Energy Stock Performance by analyzing Financial Data using VBA
 
-## Background
-We helped steve analyse a handful of green energy stocks to addition to DAQO stocks where his parents were planning to invest their money. Steve loved the workbook we prepared for him. At the click of a button, he can analyze an entire dataset. 
+## Overview of Project
+We helped steve analyze a handful of green energy stocks in addition to DAQO stocks where his parents were planning to invest their money. Steve loved the workbook we prepared for him. At the click of a button, he can analyze an entire dataset. 
 
 Now, to do a little more research for his parents, he wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might not work as well for thousands of stocks. And if it does, it may take a long time to execute.
 
-In this challenge, we will edit, or refactor, the Module 2 solution code to loop through all the data one time in order to collect the same information that we did in this module. Then, we will determine whether refactoring your code successfully made the VBA script run faster.
+In this project, we will edit, or refactor, the Module 2 solution code to loop through all the data one time to collect the same information that we did in this module. Then, we will determine whether refactoring code successfully made the VBA script run faster.
+
+### Elapsed Time for 2017 and 2018 - Module 2 
+
+![image](https://user-images.githubusercontent.com/78935551/110394202-0711d600-803a-11eb-8bc6-609480bcf0b9.png)
+
+![image](https://user-images.githubusercontent.com/78935551/110394378-57893380-803a-11eb-8e8a-bede48706b9a.png)
 
 ## Refactor VBA code and measure performance
+Using our knowledge of VBA and the starter code provided for the Challenge to refactor the Module 2 script we will loop through the data one time and collect all of the information. Our refactored code should run faster than it did in this module.
+
+    '1a) Create a ticker Index
+     tickerIndex = 0
+
+    '1b) Create three output arrays
+    Dim TickerVolumes(12) As Long
+    Dim TickerStartingPrices(12) As Single, TickerEndingPrices(12) As Single
+    
+    ''2a) Create a for loop to initialize the tickerVolumes to zero.
+    For i = 0 To 11
+    TickerVolumes(i) = 0
+    TickerStartingPrices(i) = 0
+    TickerEndingPrices(i) = 0
+       
+    Next i
+            
+    ''2b) Loop over all the rows in the spreadsheet.
+     For i = 2 To RowCount
+    
+     '3a) Increase volume for current ticker
+         TickerVolumes(tickerIndex) = TickerVolumes(tickerIndex) + Cells(i, 8).Value
+    
+        
+     '3b) Check if the current row is the first row with the selected tickerIndex.
+       
+     'If  Then
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+        TickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+           
+      End If
+        
+      '3c) check if the current row is the last row with the selected ticker
+         If the next row’s ticker doesn’t match, increase the tickerIndex.
+        'If  Then
+         If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+         TickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+       End If
+
+      '3d Increase the tickerIndex.
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+        tickerIndex = tickerIndex + 1
+        
+        End If
+        
+        Next i
+        
 
 
 
