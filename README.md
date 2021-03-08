@@ -1,5 +1,5 @@
 # Stock-Analysis
-Exploring Green Engnergy Stock Performance by analyzing Financial Data using VBA
+Exploring Green Energy Stock Performance by analyzing Financial Data using VBA
 
 ## Background
 We helped steve analyse a handful of green energy stocks to addition to DAQO stocks where his parents were planning to invest their money. Steve loved the workbook we prepared for him. At the click of a button, he can analyze an entire dataset. 
