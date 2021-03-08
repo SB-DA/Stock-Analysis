@@ -8,4 +8,7 @@ Now, to do a little more research for his parents, he wants to expand the datase
 
 In this challenge, we will edit, or refactor, the Module 2 solution code to loop through all the data one time in order to collect the same information that we did in this module. Then, we will determine whether refactoring your code successfully made the VBA script run faster.
 
+## Refactor VBA code and measure performance
+
+
 
