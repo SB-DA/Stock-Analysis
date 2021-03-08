@@ -10,9 +10,10 @@ In this project, we will edit, or refactor, the Module 2 solution code to loop t
 
 ### Elapsed Time for 2017 and 2018 - Module 2 
 
-![image](https://user-images.githubusercontent.com/78935551/110394202-0711d600-803a-11eb-8bc6-609480bcf0b9.png)
+![image](https://user-images.githubusercontent.com/78935551/110395578-61ac3180-803c-11eb-80a1-b554a74b477c.png)
 
-![image](https://user-images.githubusercontent.com/78935551/110394378-57893380-803a-11eb-8e8a-bede48706b9a.png)
+![image](https://user-images.githubusercontent.com/78935551/110395592-67a21280-803c-11eb-80e0-f814f48cce99.png)
+
 
 ## Refactor VBA code and measure performance
 Using our knowledge of VBA and the starter code provided for the Challenge to refactor the Module 2 script we will loop through the data one time and collect all of the information. Our refactored code should run faster than it did in this module.
