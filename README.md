@@ -71,23 +71,30 @@ Our refactored code below now runs faster than it did in this module.
     Cells(4 + i, 3).Value = TickerEndingPrices(i) / TickerStartingPrices(i) - 1
             
     Next i
-        
+    
+### Elapsed Time for 2017 and 2018 - Refactored Code.
+
+![image](https://user-images.githubusercontent.com/78935551/110696387-06ec1480-81b9-11eb-985b-668b83ea30d5.png)
+
+![image](https://user-images.githubusercontent.com/78935551/110696440-19664e00-81b9-11eb-9326-f568a09e6881.png)
+
+       
 ## Summary 
 ### Results
-- With these Macros created we can clearly see the table for each year.
+- With these Macros created we can clearly see the table with analysis for each year.
 - Steve can read the table lot easier due to conditional formatting.
-- Updated Macro's can be used to run analysis for any year.
+- Updated Macro's can be used to run the analysis for any year.
 - We refactored the codes to run faster in VBA so that if Steve has a larger dataset he can analyze it quickly.
 
 ### Advanatages of Refactoring codes.
-- Refactoring is a key part of coding process. It just makes the code more efficient with fewer steps.
-- Refactoring codes helps reduce the run time of the Macro's.
-- It looks much cleaner and helps future user to undersatnd and read it better.
+- Refactoring is a key part of the coding process. It just makes the code more efficient with fewer steps.
+- Refactoring codes help reduce the run time of the Macros.
+- It looks much cleaner and helps the future user to understand and read it better.
 
 ### Disadvanatages of Refactoring codes.
-- Refactoring codes can be time consuming
-- It might be difficult for larger and more complicated codes to refactor
-- 
+- Refactoring codes can be time-consuming.
+- It might be difficult for larger and more complicated codes to refactor.
+- It may sometimes alter the outcomes 
 
 
 
