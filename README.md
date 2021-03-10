@@ -16,7 +16,8 @@ In this project, we will edit, or refactor, the Module 2 solution code to loop t
 
 
 ## Refactor VBA code and measure performance
-Using our knowledge of VBA and the starter code provided for the Challenge to refactor the Module 2 script we will loop through the data one time and collect all of the information. Our refactored code should run faster than it did in this module.
+Using our knowledge of VBA and the starter code provided for the Challenge to refactor the Module 2 script we looped through the data and collected all information.
+Our refactored code below now runs faster than it did in this module. 
 
     '1a) Create a ticker Index
      tickerIndex = 0
