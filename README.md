@@ -94,14 +94,7 @@ Our refactored code below now runs faster than it did in this module.
 ### Disadvanatages of Refactoring codes.
 - Refactoring codes can be time-consuming.
 - It might be difficult for larger and more complicated codes to refactor.
-- It may sometimes alter the outcomes 
+- It may sometimes alter the outcomes.
 
-
-
-
-
-
-- 
-- 
 
 
